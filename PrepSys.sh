@@ -10,7 +10,7 @@ systemctl enable firewalld
 
 # Install & Enable Docker 
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-yum install docker-ce
+yum install -y docker-ce
 
 systemctl start docker
 systemctl enable docker
